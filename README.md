@@ -1,7 +1,4 @@
-Here’s a comprehensive `README.md` file for your **Disease Prediction System** project. This file provides an overview of the project, instructions for setting it up, and details on how to use it.
-
-```markdown
-# Disease Prediction System
+# AI-Powered Predictive Medical Diagnosis System
 
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
