@@ -45,8 +45,8 @@ Follow these steps to set up the project on your local machine.
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-username/disease-prediction-system.git
-   cd disease-prediction-system
+   git clone [https://github.com/Yogiii13/AI-Powered-Predictive-Medical-Diagnosis-System.git]
+   cd AI-Powered-Predictive-Medical-Diagnosis-System
    ```
 
 2. **Create a Virtual Environment** (Optional but recommended):
