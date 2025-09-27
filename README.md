@@ -8,17 +8,34 @@ The **Disease Prediction System** is a web-based application built using **Strea
 
 ---
 
+
 ## Features
 
 - **Disease Prediction**: Predict the likelihood of diseases using machine learning models.
 - **User-Friendly Interface**: Simple and intuitive interface for entering input features.
 - **Multiple Diseases Supported**:
-  - Diabetes Prediction
-  - Heart Disease Prediction
-  - Parkinson's Disease Prediction
-  - Lung Cancer Prediction
-  - Hypo-Thyroid Prediction
+   - Diabetes Prediction
+   - Heart Disease Prediction
+   - Parkinson's Disease Prediction
+   - Lung Cancer Prediction
+   - Hypo-Thyroid Prediction
 - **Real-Time Results**: Get instant predictions after entering the required inputs.
+
+---
+
+## Screenshots
+
+Below are some screenshots of the application in action:
+
+<p align="center">
+   <img src="Screenshots/1.png" alt="Screenshot 1" width="400"/>
+   <img src="Screenshots/2.png" alt="Screenshot 2" width="400"/>
+   <img src="Screenshots/3.png" alt="Screenshot 3" width="400"/>
+   <img src="Screenshots/4.png" alt="Screenshot 4" width="400"/>
+   <img src="Screenshots/5.png" alt="Screenshot 5" width="400"/>
+</p>
+
+---
 
 ---
 
