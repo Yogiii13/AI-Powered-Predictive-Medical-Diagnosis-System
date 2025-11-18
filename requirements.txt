@@ -1,6 +1,9 @@
 streamlit==1.26.0
 scikit-learn==1.2.2
 pandas==2.0.3
-numpy==1.24.3
+# Use a more flexible numpy constraint so the installer can select
+# a prebuilt wheel appropriate for the Python runtime (avoids
+# building older numpy from source on very new Python versions).
+numpy>=1.25.0,<2
 pickle-mixin==1.0.2
 streamlit-option-menu==0.3.6

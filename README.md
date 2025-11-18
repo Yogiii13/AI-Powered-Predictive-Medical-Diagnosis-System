@@ -85,6 +85,16 @@ Follow these steps to set up the project on your local machine.
 5. **Access the Application**:
    Open your browser and go to `http://localhost:8501`.
 
+   ---
+
+   **Deployment note (Streamlit App Platform)**
+
+   - If deploying to Streamlit's cloud (or other managed platforms), the default Python runtime may be very recent (for example Python 3.13). Some scientific packages (numpy, scikit-learn) may not have prebuilt wheels for the very latest Python versions and pip will attempt to build them from source,
+     which often fails in the service environment.
+   - To avoid build failures, this repository includes a `runtime.txt` pinning the app to Python 3.10.12. After pulling these changes, re-deploy the app so the platform uses the pinned Python runtime.
+
+   If you'd rather run on a newer interpreter, ensure `requirements.txt` is adjusted to use package versions that provide wheels for that Python version.
+
 ---
 
 ## Usage
