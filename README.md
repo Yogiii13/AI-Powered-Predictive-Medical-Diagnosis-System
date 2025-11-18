@@ -85,15 +85,46 @@ Follow these steps to set up the project on your local machine.
 5. **Access the Application**:
    Open your browser and go to `http://localhost:8501`.
 
-   ---
+---
 
-   **Deployment note (Streamlit App Platform)**
+## Deployment to Streamlit Cloud
 
-   - If deploying to Streamlit's cloud (or other managed platforms), the default Python runtime may be very recent (for example Python 3.13). Some scientific packages (numpy, scikit-learn) may not have prebuilt wheels for the very latest Python versions and pip will attempt to build them from source,
-     which often fails in the service environment.
-   - To avoid build failures, this repository includes a `runtime.txt` pinning the app to Python 3.10.12. After pulling these changes, re-deploy the app so the platform uses the pinned Python runtime.
+This application is ready to deploy to **Streamlit Community Cloud**. Follow these steps:
 
-   If you'd rather run on a newer interpreter, ensure `requirements.txt` is adjusted to use package versions that provide wheels for that Python version.
+### Prerequisites
+- A GitHub account with this repository
+- A Streamlit Community Cloud account (free at [share.streamlit.io](https://share.streamlit.io))
+
+### Deployment Steps
+
+1. **Push to GitHub**:
+   ```bash
+   git add .
+   git commit -m "Ready for deployment"
+   git push origin main
+   ```
+
+2. **Deploy on Streamlit Cloud**:
+   - Go to [share.streamlit.io](https://share.streamlit.io)
+   - Click "New app"
+   - Select your repository, branch (main), and file (`app.py`)
+   - Click "Deploy"
+
+3. **Configuration**:
+   - The repository includes `.streamlit/config.toml` for optimal performance
+   - `runtime.txt` ensures Python 3.10.12 compatibility
+   - `requirements.txt` specifies all dependencies with compatible versions
+
+### Important Notes
+- **Python Runtime**: This app uses Python 3.10.12 (specified in `runtime.txt`) to ensure all packages have prebuilt wheels
+- **Dependencies**: All packages in `requirements.txt` are pinned to versions compatible with Python 3.10
+- **Models**: Pre-trained models in `Model/` folder are included automatically with the deployment
+- **Build Time**: First deployment takes 2-3 minutes; subsequent updates are faster
+
+### Troubleshooting Deployment
+- If build fails, verify all model files exist in `Model/` folder
+- Ensure `requirements.txt` hasn't been manually modified with incompatible versions
+- Check Streamlit Cloud deployment logs for specific errors
 
 ---
 
